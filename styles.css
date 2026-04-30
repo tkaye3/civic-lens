@@ -549,35 +549,27 @@ blockquote.tagline {
 }
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
-@media (prefers-color-scheme: dark) {
-  body:not(.light-mode):not(.dark-mode) {
-    background-color: var(--truth-text);
-    color: var(--watchdog-white);
-  }
-
-  body:not(.light-mode):not(.dark-mode) h2,
-  body:not(.light-mode):not(.dark-mode) h3,
-  body:not(.light-mode):not(.dark-mode) blockquote.tagline {
-    color: var(--watchdog-white);
-  }
-
-  body:not(.light-mode):not(.dark-mode) .article-card {
-    background-color: var(--truth-text);
-    border-color: #555;
-    color: var(--watchdog-white);
-  }
-
-  body:not(.light-mode):not(.dark-mode) .article-card h3,
-  body:not(.light-mode):not(.dark-mode) .article-card p {
-    color: var(--watchdog-white);
-  }
+body.dark-mode {
+  background-color: var(--truth-text);
+  color: var(--watchdog-white);
 }
 
-@media (prefers-color-scheme: light) {
-  body:not(.light-mode):not(.dark-mode) {
-    background-color: var(--watchdog-white);
-    color: var(--truth-text);
-  }
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .main-p,
+body.dark-mode blockquote.tagline {
+  color: var(--watchdog-white);
+}
+
+body.dark-mode .article-card {
+  background-color: var(--truth-text);
+  border-color: #555;
+  color: var(--watchdog-white);
+}
+
+body.dark-mode .article-card h3,
+body.dark-mode .article-card p {
+  color: var(--watchdog-white);
 }
 
 @media (prefers-reduced-motion: reduce) {
