@@ -1,130 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
+  <meta name="description"
+    content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
   <meta name="author" content="Civic Lens">
 
-<!-- ADD Open Graph Meta for title, description, image, url, type -->
-
-<!-- ADD link to stylesheet -->
-
+  <!-- ADD Open Graph Meta for title, description, image, url, type -->
+  <meta property="og:title" content="Civic Lens">
+  <meta property="og:description"
+    content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <!-- ADD link to stylesheet -->
+  <link rel="stylesheet" href="styles.css">
   <title>Civic Lens</title>
 </head>
+
 <body>
-<!-- ADD semantic and validated HTML -->
-<!-- ADD skip to main content -->
-    <button id="theme-toggle" aria-label="Toggle light/dark mode">
-      <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
-        <g clip-path="url(#a)"><path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="#333" fill-rule="evenodd"/></g>
-      </svg>
-    </button>
+  <!-- ADD semantic and validated HTML -->
+  <!-- ADD skip to main content -->
+  <header>
+    <a href="#main-content" class="skip-link">Skip to the main content</a>
+  <button id="theme-toggle" aria-label="Toggle light/dark mode">
+    <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="a">
+          <path d="m18.512 18.512h62.977v62.977h-62.977z" />
+        </clipPath>
+      </defs>
+      <g clip-path="url(#a)">
+        <path
+          d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531"
+          fill="#333" fill-rule="evenodd" />
+      </g>
+    </svg>
+  </button>
+    <h1>Civic Lens</h1>
+    <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
 
-      Civic Lens
-      <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
-      
-      <nav class="mobile-nav" aria-label="Mobile Navigation">
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="menu-button">Menu</label>
-        <ul class="menu">
-          <li><a href="#breaking-news">Breaking News</a></li>
-          <li><a href="#featured-aticles">Featured Articles</a></li>
-          <li><a href="#alerts">Alerts</a></li>
-          <li><a href="#social">Social</a></li>
-        </ul>
-      </nav>
-      
-      Welcome to Civic Lens
-        We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
-        <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <input type="checkbox" id="menu-toggle" hidden>
+      <label for="menu-toggle" class="menu-button">Menu</label>
+      <ul class="menu">
+        <li><a href="#breaking-news">Breaking News</a></li>
+        <li><a href="#featured-aticles">Featured Articles</a></li>
+        <li><a href="#alerts">Alerts</a></li>
+        <li><a href="#social">Social</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading">Welcome to Civic Lens</h2>
+      <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and
+        truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and
+        shine light on the systems that shape our society.</p>
+      <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+    </section>
 
-      Breaking News
+    <section id="breaking-news" aria-labelledby="breaking-news-heading">
+      <h2 id="breaking-news-heading">Breaking News</h2>
+      <div class="breaking-news-grid">
+        <article class="news-card">
+          <div class="news-card-content">
+            <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+            <p>The Department of Justice has announced a full investigation into decades of water distribution practices
+              affecting tribal lands and rural communities.
+            </p>
+          </div>
+          <video controls>
+            <source src="videos/water-management.mp4" type="video/mp4">
+          </video>
+        </article>
+        <article class="news-card">
+          <div class="news-card-content">
+            <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+            <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of
+              color and
+              those in rural areas of the country.
+            </p>
+          </div>
+          <video controls>
+            <source src="videos/voter-suppression.mp4" type="video/mp4">
+          </video>
+        </article>
+      </div>
+    </section>
 
-        Federal Investigation Launched into Water Mismanagement in the Southwest
-        The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.
-        videos/water-management.mp4
-        
-        Voter Suppression Bill Faces Pushback in State Supreme Court
-        Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.
-        videos/voter-suppression.mp4
-        
-      Featured Articles
-        
-        The Cost of Silence: Whistleblower Stories from Inside Tech Giants
-        Former employees speak out about ethical breaches in data privacy and surveillance.
-        
-        Unequal Justice: How Bail Systems Harm the Poor
-        An investigative series on cash bail and its disproportionate impact.
-        
-        Invisible Work: The Lives of Migrant Caregivers
-        Humanizing the labor that keeps households and economies afloat.
-        
-        Redlined Still: A New Map of Modern-Day Housing Discrimination
-        Data visualization showing systemic inequality in real estate today.
-        
-        Climate Injustice: Who Pays for Pollution?
-        Communities of color bear the brunt of environmental damage.
-        
-        Teaching Under Fire: The Fight for Inclusive Education
-        Teachers navigate book bans, curriculum restrictions, and culture wars.
-        
-        Food Deserts and Corporate Abandonment
-        Why access to nutrition is a zip code lottery.
-        
-        Policing Mental Health: A Broken Response System
-        Examining police interactions with those in crisis.
-        
-        The Disinformation Economy
-        Tracing profit motives behind fake news empires.
-        
-        Facing the Algorithm: AI and Racial Bias
-        The coded inequalities that shape our lives.
-        
-        The Voting Maze
-        A guide to understanding your rights amid changing laws.
-        
-        After the Cameras Leave: Long-Term Crisis Recovery
-        Rebuilding trust and infrastructure in disaster-hit communities.
-        
-        
-      Stay Informed. Stay Empowered.
-        Receive text messages with the news you want to know.
-        
-        Name
-        
-        Mobile
-        
-        Notification Preferences
-        
-        Breaking News
-        Politics
-        Weather
-        Sports
-        Entertainment
-        World
-        Financial
-        
-        Subscribe
-      
-      Follow Us
-        Twitter/X
-        Instagram
-        YouTube
-        TikTok
-        LinkedIn
-        
-        &copy; 2025 Civic Lens. All rights reserved.
-        
-        
+    <section id="featured-articles-heading" aria-labelledby="featured-articles-heading">
+      <h2 id="featured-articles-heading">Featured Articles</h2>
+      <div class="articles-grid">
+
+        <article class="article-card">
+          <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
+          <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+        </article>
+        <article class="article-card">
+          <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
+          <p>An investigative series on cash bail and its disproportionate impact.</p>
+        </article>
+        <article class="article-card">
+          <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
+          <p>Humanizing the labor that keeps households and economies afloat.</p>
+        </article>
+        <article class="article-card">
+          <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
+          <p>Data visualization showing systemic inequality in real estate today.</p>
+        </article>
+        <article class="article-card">
+          <h3>Climate Injustice: Who Pays for Pollution?</h3>
+          <p>Communities of color bear the brunt of environmental damage.</p>
+        </article>
+        <article class="article-card">
+          <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
+          <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+        </article>
+        <article class="article-card">
+          <h3>Food Deserts and Corporate Abandonment</h3>
+          <p>Why access to nutrition is a zip code lottery.</p>
+        </article>
+        <article class="article-card">
+          <h3>Policing Mental Health: A Broken Response System</h3>
+          <p>Examining police interactions with those in crisis.</p>
+        </article>
+        <article class="article-card">
+          <h3>The Disinformation Economy</h3>
+          <p>Tracing profit motives behind fake news empires.</p>
+        </article>
+        <article class="article-card">
+          <h3>Facing the Algorithm: AI and Racial Bias</h3>
+          <p>The coded inequalities that shape our lives.</p>
+        </article>
+        <article class="article-card">
+          <h3>The Voting Maze</h3>
+          <p>A guide to understanding your rights amid changing laws.</p>
+        </article>
+        <article class="article-card">
+          <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
+          <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+        </article>
+      </div>
+    </section>
+    <section id="alerts" aria-labelledby="alerts-heading">
+      <h2 id="alerts-heading">Stay Informed. Stay Empowered.</h2>
+      <p>Receive text messages with the news you want to know.</p>
+
+      <div class="form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="full-name">Name<span class="required">*</span></label>
+            <input tyoe="text" id="full-name" name="full_name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Mobile<span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+        <fieldset class="notifications">
+          <legend>Notification Preferences</legend>
+          <div class="checkbox-grid">
+            <label>
+              <input type="checkbox" name="notifications" value="news">Breaking News
+            </label>
+            <label>
+              <input type="checkbox" name="notifications" value="poli">Politics
+            </label>
+            <label>
+              <input type="checkbox" name="notifications" value="weath">Weather
+            </label>
+            <label>
+              <input type="checkbox" name="notifications" value="sport">Sports
+            </label>
+            <label>
+              <input type="checkbox" name="notifications" value="enter">Entertainment
+            </label>
+            <label>
+              <input type="checkbox" name="notifications" value="world">World
+            </label>
+            <label>
+              <input type="checkbox" name="notifications" value="finan">Financial
+            </label>
+          </div>
+        </fieldset>
+        <button type="submit" class="subscribe-button">Subscribe</button>
+      </div>
+    </section>
+  </main>
+<footer>
+  <section id="social" aria-labelledby="social-heading">
+  <h2 id="social-heading">Follow Us</h2>
+  <nav aria-label="social media">
+    <ul class="social-links">
+  <li>
+    <a href="#" class="social-link">Twitter/X</a>
+  </li>
+  <li>
+    <a href="#" class="social-link">Instagram</a>
+  </li>
+  <li>
+    <a href="#" class="social-link">YouTube</a>
+  </li>
+  <li>
+    <a href="#" class="social-link">TikTok</a>
+  </li>
+  <li>
+    <a href="#" class="social-link">LinkedIn</a>
+  </li>
+
+</ul>
+</nav>
+</section>
+  <p class="copyrught">&copy; 2025 Civic Lens. All rights reserved.</p>
+
+</footer>
   <script>
     const toggleButton = document.getElementById('theme-toggle');
-  
+
     toggleButton.addEventListener('click', () => {
       const body = document.body;
-  
+
       // Toggle manually between light and dark mode
       if (body.classList.contains('dark-mode')) {
         body.classList.remove('dark-mode');
@@ -140,4 +239,5 @@
     });
   </script>
 </body>
+
 </html>
